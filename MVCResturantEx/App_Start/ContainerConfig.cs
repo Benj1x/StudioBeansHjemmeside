@@ -1,11 +1,9 @@
-﻿using Autofac;
+﻿using System.Web.Mvc;
+using Autofac;
 using Autofac.Integration.Mvc;
-using System.Web.Mvc;
-using MVCResturantEx;
-using MVCResturantEx2.data.Service;
+//using MVCResturantEx2.data.Service;
 
-
-namespace MVCRestaurantExample
+namespace MVCStudioBeansWebsite
 {
     public class ContainerConfig
     {
@@ -14,8 +12,8 @@ namespace MVCRestaurantExample
             var builder = new ContainerBuilder();
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
-            builder.RegisterType<SqlRestaurantData>().InstancePerRequest();
-            builder.RegisterType<ResturantDbContext>().InstancePerRequest();
+            //builder.RegisterType<SqlRestaurantData>().InstancePerRequest();
+            //builder.RegisterType<ResturantDbContext>().InstancePerRequest();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

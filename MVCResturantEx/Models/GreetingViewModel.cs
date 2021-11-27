@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVCResturantEx.Models
+namespace MVCStudioBeansWebsite.Models
 {
     public class GreetingViewModel
     {

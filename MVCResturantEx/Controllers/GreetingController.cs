@@ -4,9 +4,9 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MVCResturantEx.Models;
+using MVCStudioBeansWebsite.Models;
 
-namespace MVCResturantEx.Controllers
+namespace MVCStudioBeansWebsite.Controllers
 {
     public class GreetingController : Controller
     {

@@ -4,19 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MVCResturantEx2.data;
-using MVCResturantEx2.data.Service;
 
-namespace MVCResturantEx.Controllers
+
+namespace MVCStudioBeansWebsite.Controllers
 {
     public class HomeController : Controller
     {
-        public SqlRestaurantData simDB;
-
-        public HomeController(SqlRestaurantData simDB)
-        {
-            this.simDB = simDB;
-        }
+        
         public ActionResult Projects()
         {
             //var model = simDB.getAll();
@@ -36,16 +30,5 @@ namespace MVCResturantEx.Controllers
 
             return View();
         }
-
-        public ActionResult Details(int id)
-        {
-            var model = simDB.getDetails(id);
-            if (model == null)
-            {
-                return View("Projects");
-            }
-            return View(model);
-        }
-
     }
 }
