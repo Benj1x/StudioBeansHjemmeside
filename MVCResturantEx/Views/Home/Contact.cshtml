@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Kontakt mig";
+}
+
+<head>
+
+    <style>
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc; /*#ccc er hex kode for grå*/
+            border-radius: 4px;
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+
+        .container-box {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>@ViewData["Title"]</h2>
+   
+
+    <form method="get" name="myContactForm">
+
+        <section class="container-box" style="margin-top: 50px;">
+
+            <label for="fullName" style="font-weight:800">Fulde Navn*</label>
+            <input type="text" id="fullName" name="fullname" required placeholder="Fulde Navn.." />
+
+            <label for="companyName" style="font-weight:800">Firma (Valgfrit)</label>
+            <input type="text" id="companyName" name="companyName" placeholder="Firma.." />
+
+
+            <label for="email" style="font-weight:800">Email*</label>
+            <input type="text" id="email" name="email" required placeholder="sampleEmail@domain.com" />
+
+            <input type="checkbox" id="consentBox" required name="consentBox" value="Jeg accepterer og forstår vilkårene og betinglserne" /> <label for="betinglser" style="margin-top:-2px; font-size: 75%; font-weight:400;">Jeg accepterer og forstår <a href="#" style="text-decoration:underline">vilkårene</a> og <a href="#" style="text-decoration:underline">betinglserne</a></label>
+
+            <section></section>
+
+            <label for="besked" style="font-weight:800">Besked</label>
+            <textarea id="besked" name="besked" placeholder="Besked.." style="height: 200px;"></textarea>
+
+            <input type="submit" value="Send" />
+
+        </section>
+
+    </form>
+</body>
+
+<script>
+    function checkform() {
+        var f = document.forms["myContactForm"].elements;
+        var canSubmit = true;
+        //This loop does not work TODO
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) canSubmit = false;
+        }
+
+        if (canSubmit) {
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else {
+            document.getElementById('submitbutton').disabled = 'disabled';
+        }
+    }
+</script>

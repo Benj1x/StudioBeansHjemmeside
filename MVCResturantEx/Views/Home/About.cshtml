@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "About Me";
+}
+<body>
+<div class="container-box">
+    <h3>
+        StudioBeans er et dansk firma fokuseret på <br /> software og spil udvikling, og er <br /> baseret i Jylland.
+    </h3>
+    <a target="_blank" rel="noopener noreferrer" href=@Html.AttributeEncode("https://www.facebook.com/StudioBeansGames")>
+        <img src="/Content/Images/facebookLogo.png" alt="Sample Image" width="30px" />
+    </a>
+    
+
+    <h6>
+        boh@studiobeans.dk
+    </h6>
+</div>
+<div class="container-box-right">
+    <h3>Benjamin O. Høj</h3>
+    <img src="~/images/placeholder.jpg" alt="Billede af: Benjamin" asp-append-version="true" style="width:150px;height:150px; border-radius: 50%" />
+    <li style="margin-top: 25px;">Entusiast & Full-Stack udvikler</li>
+    <li>20 år</li>
+    @*<li><a asp-action="Portfolio">Portfolio</a></li>*@
+</div>
+
+</body>
