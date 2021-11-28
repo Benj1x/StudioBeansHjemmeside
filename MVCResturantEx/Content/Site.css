@@ -1,5 +1,6 @@
 ﻿body {
     size: auto;
+    height:auto;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -29,14 +30,38 @@ textarea {
     right: 0;
     left: 0;
     height: 50px;
-    background-color: #333333;
+    background-color: transparent;
 }
 .navbarContainer {
     position: fixed;
-    right: 0;
+    height: 20px !important;
+    right: 100px;
+    top: 25px;
     height: inherit;
-    background-color: inherit;
-    color: black;
+    background-color: transparent;
+    color: transparent;
+}
+.navbarElement {
+    top: 0px;
+    position: relative;
+
+    margin: 0px 50px 0px 0px;
+}
+.navbar-header {
+    color: transparent;
+    display: block;
+    position: fixed;
+    height: 20px !important;
+    left: 50px;
+    top: 25px;
+    height: inherit;
+    background-color: transparent;
+    color: black;   
+}
+
+.navbar-button {
+    right: 0;
+    display: inline-block;
 }
 
 .footerContent {
@@ -47,6 +72,7 @@ textarea {
     height: 100px;
     background-color: #333333;
 }
+
 .button-games {
     position: fixed;
     border: none;
@@ -81,6 +107,7 @@ textarea {
     margin: 4px 2px;
     cursor: pointer;
 }
+
 .container-box {
     position: fixed;
     left: 22%;
@@ -110,14 +137,17 @@ h6, .h6 {
 a:-webkit-any-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.0rem;
+    font-weight: normal;
     border: none;
     text-underline: none;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .a {
-    font-family: Open Sans, sans-serif;
-
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -141,5 +171,101 @@ a:-webkit-any-link {
 .copyright {
     position: fixed;
     left: 46%;
-    bottom: 50px;
+    bottom: 25px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.grid-Container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+.box-Designer {
+    padding: 20px 30px;
+    width: 281px;
+}
+.grid-Games {
+    margin: 5rem auto;
+    width: 90%;
+    display: grid;
+    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
+    grid-template-columns: 33% 33% 33%;
+    gap: 3em;
+}
+
+.grid-Programs {
+    margin: 5rem auto;
+    width: 90%;
+    display: grid;
+    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
+    grid-template-columns: 33% 33% 33%;
+    gap: 0em;
+}
+.description-Title {
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.description {
+    margin: 20px 0 0;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.learn-More {
+    color: black !important;
+    background-color: transparent !important;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    border-style: none none solid;
+    text-transform: uppercase;
+    margin: 20px auto 0 0;
+    padding: 2px 0;
+    border-color: #e68387 !important;
+}
+
+.facebook {
+    position: relative;
+    left: 0px;
+    top: -20px;
+}
+
+.twitter {
+    top: -15px;
+    position: relative;
+    left: 0px;
+}
+
+.youtube {
+    top: -17px;
+    position: relative;
+    left: 0px;
+}
+
+.github {
+    top: -20px;
+    position: relative;
+    left: 0px;
+}
+
+.email {
+    top: -50px;
+    position: relative;
+    left: 0px;
+}
+.conditions {
+    top: 0px;
+    position: relative;
+    border-style: none none solid;
+    border-color: black;
+}
+.consent {
+    overflow-y: auto;
+    height: 700px;
 }

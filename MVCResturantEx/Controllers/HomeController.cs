@@ -13,7 +13,7 @@ namespace MVCStudioBeansWebsite.Controllers
         
         public ActionResult Projects()
         {
-            //var model = simDB.getAll();
+            
             return View();
         }
 
@@ -28,6 +28,21 @@ namespace MVCStudioBeansWebsite.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult Games()
+        {
+
+            return View();
+        }
+
+        public ActionResult Programs()
+        {
+
+            return View();
+        }
+        public ActionResult ContactConsent()
+        {
             return View();
         }
     }

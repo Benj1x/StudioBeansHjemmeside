@@ -144,12 +144,10 @@
     <Compile Include="App_Start\ContainerConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\GreetingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\GreetingViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +156,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\facebookLogo.png" />
+    <Content Include="Content\Images\githubLogo.png" />
+    <Content Include="Content\Images\twitterLogo.png" />
+    <Content Include="Content\Images\UnrealEngineLogo.jpg" />
+    <Content Include="Content\Images\yotubeLogo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -191,10 +193,12 @@
     <Content Include="Views\Greeting\Index.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Games.cshtml" />
-    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Programs.cshtml" />
+    <Content Include="Views\Home\ContactConsent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
