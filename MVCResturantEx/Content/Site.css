@@ -187,6 +187,15 @@ a:-webkit-any-link {
     padding: 20px 30px;
     width: 281px;
 }
+.grid-Projects {
+    margin: 5rem auto;
+    width: 90%;
+    display: grid;
+    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
+    grid-template-columns: 33% 33% 33%;
+    gap: 3em;
+}
+
 .grid-Games {
     margin: 5rem auto;
     width: 90%;
