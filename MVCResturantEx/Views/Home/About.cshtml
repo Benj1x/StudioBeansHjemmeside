@@ -1,9 +1,16 @@
 ﻿@{
     ViewBag.Title = "About Me";
 }
+@Scripts.Render("~/JavaScript.js")
 <body>
     <div class="container-box">
-        <codersrank-summary username="benj1x" min-width=1000></codersrank-summary>
+        <codersrank-summary username="Benj1x"
+                            show-avatar="true"
+                            show-header="true"
+                            branding="false"
+                            badges="3"></codersrank-summary>
+        @*<codersrank-skills-chart username="Benj1x"></codersrank-skills-chart>*@
+        <codersrank-skills-chart username="kleanthismits" branding="false" legend tooltip skills="Java,JavaScript,Ruby,TypeScript,CSS,HTML" svg-width="1120" svg-height="400" labels="true"></codersrank-skills-chart>
         <h3>
             StudioBeans er et dansk firma fokuseret på <br /> software og spil udvikling, og er <br /> baseret i Jylland.
         </h3>
@@ -25,12 +32,13 @@
             </h6>
         </div>
     </div>
-<div class="container-box-right">
-    <h3>Benjamin O. Høj</h3>
-    <img src="~/images/placeholder.jpg" alt="Billede af: Benjamin" asp-append-version="true" style="width:150px;height:150px; border-radius: 50%" />
-    <li style="margin-top: 25px;">Entusiast & Full-Stack udvikler</li>
-    <li>20 år</li>
-    @*<li><a asp-action="Portfolio">Portfolio</a></li>*@
-</div>
+    <div class="container-box-right">
+        <h3>Benjamin O. Høj</h3>
+        <img src="~/images/placeholder.jpg" alt="Billede af: Benjamin" asp-append-version="true" style="width:150px;height:150px; border-radius: 50%" />
+        <li style="margin-top: 25px;">Entusiast & Full-Stack udvikler</li>
+        <li>20 år</li>
+        @*<li><a asp-action="Portfolio">Portfolio</a></li>*@
+    </div>
 
 </body>
+@Scripts.RenderFormat("~/JavaScript.js")
