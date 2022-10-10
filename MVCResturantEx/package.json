@@ -1,7 +1,10 @@
 {
+  "type": "module",
   "version": "1.0.0",
   "name": "asp.net",
   "private": true,
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "@codersrank/skills-chart": "^0.9.21"
   }
 }
