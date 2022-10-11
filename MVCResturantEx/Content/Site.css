@@ -197,11 +197,12 @@ a:-webkit-any-link {
     width: 281px;
 }
 .grid-Projects {
-    margin: 5rem auto;
+    position: relative;
+    margin: 5em 0px 0px 4em;
     width: 90%;
     display: grid;
-    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
-    grid-template-columns: 33% 33% 33%;
+    /*Grid-template-columns makes it so that we have two columns, that are each 50% in size*/
+    grid-template-columns: 50% 50%;
     gap: 3em;
 }
 
@@ -209,7 +210,7 @@ a:-webkit-any-link {
     margin: 5rem auto;
     width: 90%;
     display: grid;
-    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
+    /*Grid-template-columns makes it so that we have three columns, that are each 33% in size*/
     grid-template-columns: 33% 33% 33%;
     gap: 3em;
 }
@@ -218,7 +219,7 @@ a:-webkit-any-link {
     margin: 5rem auto;
     width: 90%;
     display: grid;
-    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
+    /*Grid-template-columns makes it so that we have three columns, that are each 33% in size*/
     grid-template-columns: 33% 33% 33%;
     gap: 0em;
 }
@@ -288,6 +289,33 @@ a:-webkit-any-link {
     height: 700px;
 }
 
+/*To position a element relative to it's container, we use this approach, with*/
+/*Parents, so that we can place the child relative to the parent, in this case*/
+.parent-relative {
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+/*This is the child*/
+.ReferenceText {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    top: 50%;
+}
+
+.right {
+    z-index: 100;
+    right: 10em;
+}
+.left{
+    z-index: 100;
+    left: 17em;
+}
 
 /*codersrank-summary {
     --header-bg-color: #fff;

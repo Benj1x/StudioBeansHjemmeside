@@ -4,11 +4,20 @@
 }
 
 <div class="grid-Projects">
-    <div>
-        <a href="Games"><button class="button-games">Games</button></a>
-        <a href="Programs">
-            <img src="/Content/Images/TODOlist.png" alt="Billede af: Java kode"
-                 asp-append-version="true" style="width:100%;height:100%; border-radius: 0%; top: 50%; right: 100%;" />
+    <div class="parent-relative">
+        <a href="Games">
+            <img src="/Content/Images/Games.jpg" alt="Billede af: Gaming"
+                 asp-append-version="true" style="width: 100%; height: 100%; border-radius: 5%;" />
+            <div class="left ReferenceText">Spil</div>
         </a>
+    </div>
+    <div>
+        <div class="parent-relative">
+            <a href="Programs">
+                <img src="/Content/Images/TODOlist.png" alt="Billede af: Java kode"
+                     asp-append-version="true" style="width:100%; height:100%; border-radius: 5%;" />
+                <div class="right ReferenceText">Programmer</div>
+            </a>
+        </div>
     </div>
 </div>
