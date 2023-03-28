@@ -143,7 +143,6 @@ a:-webkit-any-link {
     text-decoration: none;
     color: black;
 }
-
 .a {
     font-size: 16px;
     font-weight: 100;
@@ -178,15 +177,7 @@ a:-webkit-any-link {
     font-weight: 500;
     color: white;
 }
-.CVRLine {
-    position: fixed;
-    left: 47%;
-    bottom: 5px;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    color: white;
-}
+
 .grid-Container {
     position: relative;
     width: 1140px;
@@ -196,21 +187,11 @@ a:-webkit-any-link {
     padding: 20px 30px;
     width: 281px;
 }
-.grid-Projects {
-    position: relative;
-    margin: 5em 0px 0px 4em;
-    width: 90%;
-    display: grid;
-    /*Grid-template-columns makes it so that we have two columns, that are each 50% in size*/
-    grid-template-columns: 50% 50%;
-    gap: 3em;
-}
-
 .grid-Games {
     margin: 5rem auto;
     width: 90%;
     display: grid;
-    /*Grid-template-columns makes it so that we have three columns, that are each 33% in size*/
+    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
     grid-template-columns: 33% 33% 33%;
     gap: 3em;
 }
@@ -219,7 +200,7 @@ a:-webkit-any-link {
     margin: 5rem auto;
     width: 90%;
     display: grid;
-    /*Grid-template-columns makes it so that we have three columns, that are each 33% in size*/
+    /*Grid-template-columns does that we have three columns, that are each 33% in size*/
     grid-template-columns: 33% 33% 33%;
     gap: 0em;
 }
@@ -288,37 +269,3 @@ a:-webkit-any-link {
     overflow-y: auto;
     height: 700px;
 }
-
-/*To position a element relative to it's container, we use this approach, with*/
-/*Parents, so that we can place the child relative to the parent, in this case*/
-.parent-relative {
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-/*This is the child*/
-.ReferenceText {
-    z-index: 100;
-    position: absolute;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-
-    top: 50%;
-}
-
-.right {
-    z-index: 100;
-    right: 10em;
-}
-.left{
-    z-index: 100;
-    left: 17em;
-}
-
-/*codersrank-summary {
-    --header-bg-color: #fff;
-    --name-font-size: 20px;
-}
-*/
